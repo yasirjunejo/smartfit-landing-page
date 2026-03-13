@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* nav */
+
+header{
+    background-color: #000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 98%;
+    z-index: 999;
+}
+
+header #logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 10px;
+}
+
+nav a:hover{
+    color: #ffcc00;
+}
+
+/* hero */
+
+.hero{
+    background-image: url("pexels-pixabay-267394.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    height: 400px;
+    width: 100%;
+}
+
+.hero-text{
+    text-align: center;
+    padding-top: 140px;
+}
+
+.hero-text h1{
+    font-size: 2.8rem;
+}
+.hero-text p{
+    font-size: 1.1rem;
+}
+.hero-text button{
+    background-color: #ffcc00;
+    color:  #000;
+    border: none;
+    padding: 12px 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* features */
+.section{
+    padding: 40px 20px;
+    text-align: center;
+}
+.features{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+.card i{
+    color: #ffcc00;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+/* pricing */
+
+.pricing{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.price-card{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+.price-card button{
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.price-card h3{
+    margin-bottom: 10px;
+}
+
+/* contact */
+address{
+    margin-top: 20px;
+    font-style: normal;
+}
+
+/* footer */
+footer{
+    text-align: center;
+    background-color: #000;
+    padding: 20px;
+}
+
+@media  (max-width: 750px) {
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hero{
+        height: 300px;
+    }
+    nav a{
+        margin-left: 0px;
+    }  
+    .hero-text h1{
+        font-size: 1.8rem;
+    }
+    .hero-text p{
+        font-size: 0.8rem;
+    }
+    .card, .price-card{
+        width: 100%;
+    }
+}
